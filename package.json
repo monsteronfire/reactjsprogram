@@ -1,0 +1,27 @@
+{
+  "name": "reactjsprogram",
+  "version": "1.0.0",
+  "description": "reactjsprogram",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava 'app/**/*.test.js' --verbose --require ./other/setup-ava-tests.js",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monsteronfire/reactjsprogram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monsteronfire/reactjsprogram/issues"
+  },
+  "homepage": "https://github.com/monsteronfire/reactjsprogram#readme",
+  "dependencies": {
+    "jquery": "^3.1.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.22.0",
+    "webpack": "^2.1.0-beta.15"
+  }
+}

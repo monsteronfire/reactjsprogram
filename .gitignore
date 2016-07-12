@@ -26,6 +26,7 @@ node_modules/
 
 # Brunch folder for temporary files.
 tmp/
+dist/
 
 # Brunch output folder.
 public/
