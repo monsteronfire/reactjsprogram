@@ -11,12 +11,36 @@ var ReactDOM = require('react-dom');
 //  }
 //});
 
-var HelloUser = React.createClass({
+//var HelloUser = React.createClass({
+//  render: function() {
+//    return (
+//      <div>Hello, {this.props.name}</div>
+//    )
+//  }
+//});
+
+//ReactDOM.render(<HelloUser name="Shaii" />, document.getElementById('app'));
+
+var ShowList = React.createClass({
   render: function() {
+    var listItems = this.props.names.map(function(friend) {
+      return <li>{friend}</li>;
+    });
+
     return (
-      <div>Hello, {this.props.name}</div>
-    )
+        <div>
+          <h3>Friends</h3>
+          <ul>
+            {listItems}
+          </ul>
+        </div>
+    );
   }
 });
 
-ReactDOM.render(<HelloUser name="Shaii" />, document.getElementById('app'));
+var friends = ['Ean Platter', 'Murphy Randall', 'Merrick Christensen'];
+var listItems = friends.map(function(friend) {
+  return "<li>" + friend + "</li>";
+});
+
+console.log(listItems);
