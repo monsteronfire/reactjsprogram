@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava 'app/**/*.test.js' --verbose --require ./other/setup-ava-tests.js",
-    "build": "webpack"
+    "build": "node_modules/.bin/webpack"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/monsteronfire/reactjsprogram#readme",
   "dependencies": {
-    "jquery": "^3.1.0"
+    "jquery": "^3.1.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",
